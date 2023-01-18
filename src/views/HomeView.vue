@@ -30,9 +30,9 @@
     </div>
     <div class="flex flex-col gap-4">
       <Suspense>
-        <CityList/>
+        <CityList />
         <template #fallback>
-          <CityCardSekeleton/>
+          <CityCardSekeleton />
         </template>
       </Suspense>
     </div>
@@ -51,13 +51,13 @@ const previewCity = (searchResult) => {
   const [city, state] = searchResult.place_name.split(",");
   router.push({
     name: "cityView",
-    params: {state: state.replaceAll(" ", ""), city: city},
+    params: { state: state.replaceAll(" ", ""), city: city },
     query: {
       lat: searchResult.geometry.coordinates[1],
       lng: searchResult.geometry.coordinates[0],
       preview: true,
-    }
-  })
+    },
+  });
 };
 
 const mapBoxAPIKey =

@@ -24,6 +24,7 @@ const getCities = async () => {
         )
       );
     });
+    
     const weatherData = await Promise.all(requests);
 
     //Flicker Delay

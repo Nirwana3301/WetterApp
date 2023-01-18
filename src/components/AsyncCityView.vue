@@ -44,7 +44,6 @@
         alt=""
       />
     </div>
-
     <hr class="border-white border-opacity-10 border w-full" />
 
     <!-- Hourly Weather -->

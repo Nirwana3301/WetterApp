@@ -1,10 +1,10 @@
 <template>
   <div class="flex flex-col min-h-screen font-Roboto bg-weather-primary">
     <SiteNavigation />
-    <RouterView v-slot="{Component}">
-    <Transition name="page" mode="out-in">
-      <component :is="Component"></component>
-    </Transition>
+    <RouterView v-slot="{ Component }">
+      <Transition name="page" mode="out-in">
+        <component :is="Component"></component>
+      </Transition>
     </RouterView>
   </div>
 </template>
@@ -12,7 +12,6 @@
 <script>
 import { RouterView } from "vue-router";
 import SiteNavigation from "./components/SiteNavigation.vue";
-
 
 export default {
   components: {
@@ -33,5 +32,4 @@ export default {
   opacity: 0;
   transform: translateX(100%);
 }
-
 </style>
