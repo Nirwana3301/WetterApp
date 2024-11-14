@@ -8,6 +8,11 @@
     </RouterView>
   </div>
 </template>
+<div>
+<h1>
+  Hallo
+</h1>
+</div>
 
 <script>
 import { RouterView } from "vue-router";
